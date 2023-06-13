@@ -1,0 +1,24 @@
+.image{
+    height: 70vh;
+    width: auto;
+    object-fit: contain;
+}
+.contenedor_estrella{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--background-start);
+    font-family: var(--font-scratchy) !important;
+    position:absolute;
+}
+.logo{
+    width: 40vh;
+}

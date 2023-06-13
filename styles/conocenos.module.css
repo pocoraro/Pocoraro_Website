@@ -1,0 +1,54 @@
+.banner{
+    width: 100vw;
+    height: auto;
+}
+.conocenos_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 18vw 20px 18vw;
+}
+ .image{
+    margin-right: 100px;
+}
+.texto{
+    max-width: 50vw;
+    font-weight: 700;
+    font-size: 30PX;
+    
+    line-height: 95%;
+}
+.textinterno{
+    font-weight: 400 !important;
+}
+
+.span_stack{
+       
+position: relative;
+padding-left: 10px;
+padding-right: 10px;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+.span_img_circulo{
+    left: 0;
+    width: 150%;
+    overflow: visible;
+    top: 0;
+    bottom: 0;
+    align-self: center;
+    position: absolute;
+    z-index: 5;
+}
+.span_img_underline{
+    left: 0;
+    width: 150%;
+    overflow: visible;
+    bottom: -5px;
+    align-self: center;
+    position: absolute;
+    z-index: 5;
+}

@@ -1,0 +1,110 @@
+.nuestros{
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
+    line-height: 75%;
+}
+.date_symetric{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    rotate: 0 0 1 -20deg;
+    z-index: -5;
+    color: var(--background-start);
+}
+.date_text{
+    padding: 0px 30px 0px 30px;
+}
+.date{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    rotate: 0 0 1 -20deg;
+    z-index: 5;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 60px;
+    font-style: italic;
+
+}
+.Image{
+    
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+.span_img_underline{
+    left: 0;
+    width: 150%;
+    overflow: visible;
+    bottom: -20px;
+    align-self: center;
+    position: absolute;
+    z-index: 5;
+
+}
+.equipo_container{
+    width: 100vw;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: end;
+    padding: 6vw 10vw 10vw 10vw;
+}
+.pestana{
+    position: absolute;
+    right: 10vw;
+    padding: 0px;
+    margin: 0px;
+    overflow: visible;
+    top: 3px;
+    border-color: var(--foreground);
+    align-self: self-end;
+    height: 6vw;
+    width: 25vw;
+    border-radius: 25px 35px 0px 0px;
+    z-index: 0;
+    background-color: var(--foreground);
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);}
+.contenido{
+
+    margin-top: 6vw;
+    padding: 10vw;
+    margin: 0px;
+    color: var(--background-start);
+    background-color: var(--foreground);
+    width: 100%;
+    border-radius: 35px 0px 35px 35px;
+    min-height: 50vw;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+.textName{
+    font-style: italic !important;
+}
+.normalText{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+.bold{
+    font-weight: 700;
+}
