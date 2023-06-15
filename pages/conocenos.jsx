@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react';
 import styles from '../styles/conocenos.module.css'
 import localFont from 'next/font/local'
-
+import Header from '@/components/header';
 
   
 // Font files can be colocated inside of `app`
@@ -31,6 +31,7 @@ export default function conocenos() {
   }, [width]);
   return (
     <main className={montse.className}>
+     <Header/>
      <Image className={styles.banner}
      src={bannerRoute}
      width={5000}

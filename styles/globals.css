@@ -8,15 +8,9 @@
   --background-end-rgb: 255, 255, 255;
   --fs-general: 18px;
   --fs-titles: 22px;
-  --fs-xl: 60;
+  --fs-xl: 60px;
 }
-@media(max-width: 601px) {
-  :root{
-  --fs-general: 15px;
-  --fs-titles: 18px;
-  --fs-xl: 30;}
-  
-}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -35,6 +29,9 @@ body {
 }
 .contenedor{
   padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 Main{
   min-height: 80vh;
@@ -42,10 +39,12 @@ Main{
 .hl2 {
   font-family: var(--font-montse);
   width: 500;
+  text-align: center;
+  align-items: center;
   color: var(--foreground);
   font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header_style {
   display: flex;
@@ -54,13 +53,63 @@ Main{
   justify-content: space-between;
   flex-direction: row !important;
 }
-.navbar{
-  
+.navbar-cust{
   display: flex;
-  justify-content: center;
+  background-color: transparent !important;
+  justify-content:flex-end !important;
   flex-direction: row !important;
+  position: relative;
+} 
+.navbar_vertical{
+  align-self: center;
+  display: flex;
+  background-color: transparent !important;
+  justify-content:flex-end !important;
+  flex-direction: column !important;
+  position: relative;
+}
+.navbar-cust .nav-link{
+  color: #341f07 !important;
+
+}
+.background{
+  background-color: var(--background-start)!important;
+  color: #341f07 !important;
+}
+
+.logo_nav{
+  max-width: 100%;
+}
+.sandwich{
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card_menu{
+  width: 80vw;
+  right: 30px;
+  position: fixed;
+  padding: 30px 8vw 30px 5vw;
+  background-color: #ef7d00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 8;
+}
+.card-menu-links{
+  color: var(--background-start) !important; 
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .footer{
+  
   width: 100vw;
   height: 20hv;
   background-color: var(--foreground);
@@ -68,33 +117,43 @@ Main{
   flex-direction: row;
   padding: 30px 40px 30px 40px;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   color: var(--background-start);
 }
 .footer h1{
-font-size: 20px;
+font-size: var(--fs-titles);
 font-weight: 600;
+
 }
+.aviso-privacidad{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .columnas_footer{
    display: flex;
    flex-direction: row;
-   justify-content: start;
-   align-items: start;
+   justify-content: flex-start;
+   align-items: flex-start;
    color: var(--background-start);
 }
 .columna_footer{
   padding: 0px 30px 0px 30px;
   flex-direction: column;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: var(--background-start);
 }
 .columna_footer h1{
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--fs-titles);
 }
-
+.columna_footer h3{
+  font-weight: 500;
+  font-size: var(--fs-general);
+}
 .red_social{
   padding: 5px 5px 5px 5px;
   align-items: center;
@@ -104,4 +163,48 @@ font-weight: 600;
 a{
 color:var(--background-start) !important;
 text-decoration: none !important;
+}
+@media(max-width: 770px) {
+  :root{
+    --fs-general: 16px;
+  --fs-titles: 20px;
+  --fs-xl: 55px;
+  }
+  
+  .navbar-cust{
+    justify-content: space-between !important;
+  }
+  .aviso-privacidad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+@media(max-width: 601px) {
+  :root{
+  --fs-general: 15px;
+  --fs-titles: 18px;
+  --fs-xl: 50px;
+  
+    
+  }
+  .aviso-privacidad{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+  .hl2{
+    color: var(--background-start)!important;
+    font-size: var(--fs-titles) !important;
+    margin-top: 30px;
+    padding-bottom: 6px;
+  }
+  .navbar-cust{
+    visibility: hidden !important;
+    position: fixed !important;
+  }
+  .sandwich{
+    visibility: visible;
+    position: relative;
+  }
 }

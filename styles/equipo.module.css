@@ -35,7 +35,7 @@
     text-align: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 60px;
+    font-size: var(--fs-xl);
     font-style: italic;
 
 }
@@ -61,7 +61,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     padding: 6vw 10vw 10vw 10vw;
 }
 .pestana{
@@ -93,7 +93,7 @@
 .info{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px 0px 20px 0px;
 }
@@ -102,9 +102,12 @@
 }
 .normalText{
     text-align: center;
-    font-size: 18px;
+    font-size: var(--fs-general);
     font-weight: 500;
 }
 .bold{
     font-weight: 700;
+}
+@media (max-width:601px){
+    
 }

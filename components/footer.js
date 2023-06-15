@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer>
-      <div className="footer">
-        <div className="columnas_footer">
-          <div className="columna_footer">
+      <div className="footer row">
+        <div className="columnas_footer row col-md-8 col-sm-12">
+          <div className="columna_footer col-md-5 col-sm-12">
             <h1>Redes Sociales</h1>
             <a href="https://www.instagram.com/pocoraro.estudio/">
               <div className="red_social">
@@ -20,14 +20,14 @@ export default function Footer() {
               </div>
             </a>
           </div>
-          <div className="columna_footer">
+          <div className="columna_footer col-md-4 col-sm-12">
             <h1>Contacto</h1>
             <h3>pocoraro.estudio@gmail.com</h3>
             <h3>4776716277</h3>
           </div>
         </div>
-        <h1>
-            Aviso de Privacidad
+        <h1 className="aviso-privacidad col-md-3 col-sm-12">
+            <Link href='/aviso'>Aviso de Privacidad</Link>
         </h1>
       </div>
     </footer>

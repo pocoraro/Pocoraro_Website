@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/index.module.css'
 import localFont from 'next/font/local'
-
+import Header from '@/components/header'
 // Font files can be colocated inside of `app`
 const montse = localFont({
   src: [{path:'./fonts/Montserrat-Medium.ttf',weight:'500'},{path:'./fonts/Montserrat-SemiBold.ttf',weight:'600'},{path:'./fonts/Montserrat-Bold.ttf',weight:'700'}],
@@ -13,11 +13,13 @@ const scratchy = localFont({
   weight: '800',
   variable: '--font-scratchy'
 })
-export default function index   () {
+export default function index() {
   return (
     <main>
+      <Header/>
       <div className={styles.contenedor_estrella}>
        <Image
+       onClick={()=>console.log("Hola")}
               src="/green_star.svg"
               alt="star Logo"
               className={styles.image}

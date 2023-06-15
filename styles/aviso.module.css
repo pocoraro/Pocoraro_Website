@@ -78,7 +78,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100vw;
     padding: 100px 15vw 20px 15vw;
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../styles/equipo.module.css";
 import localFont from "next/font/local";
+import Header from "@/components/header";
 const scratchy = localFont({
   src: "./fonts/Scratchy.ttf",
   weight: "800",
@@ -20,7 +21,7 @@ const montse = localFont({
 export default function equipo() {
   return (
     <main className={montse.className}>
-      
+      <Header/>
       <div className={styles.title}>
       
         <div className={`${styles.nuestros} `}>
