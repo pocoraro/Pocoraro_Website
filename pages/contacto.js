@@ -27,7 +27,7 @@ export default function Contacto() {
             <span className={styles.stack}>
               <span className={styles.nuestros}>
                 {" "}
-                Nos <br />
+                NOS <br />
               </span>
               <span>
                 ENCANTARÍA

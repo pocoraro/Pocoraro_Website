@@ -45,6 +45,11 @@ Main{
   font-size: 18px;
   padding-left: 10px;
   padding-right: 10px;
+  font-weight: 500;
+}
+.hl2:hover{
+  
+  font-weight: 700;
 }
 .header_style {
   display: flex;
