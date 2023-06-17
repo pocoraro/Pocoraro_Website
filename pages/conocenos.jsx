@@ -15,12 +15,12 @@ const montse = localFont({
   display: "swap",
   variable: "--font-montse",
 });
-export default function conocenos() {
+export default function Conocenos() {
   const [width, setWidth] = useState(0.0);
   const [bannerRoute, setBanner] = useState("/banners/web.svg");
 
   const handleResize = () => {
-    console.log(width);
+    console.log(width); 
     if (width < 601) {
       setBanner("/banners/phone.svg");
     } else if (width < 960) {
