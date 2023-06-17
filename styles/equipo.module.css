@@ -19,6 +19,12 @@
 .date_text{
     padding: 0px 30px 0px 30px;
 }
+
+@media (max-width: 450px){
+    .date_text{
+        display: none;
+    }
+}
 .date{
     position: relative;
     bottom: 0px;
