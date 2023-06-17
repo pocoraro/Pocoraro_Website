@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <footer>
+    <footer style={{backgroundColor: '#341F07'}}>
       <div className="footer row">
         <div className="columnas_footer row col-md-8 col-sm-12">
           <div className="columna_footer col-md-5 col-sm-12">

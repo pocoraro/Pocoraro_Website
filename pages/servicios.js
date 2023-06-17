@@ -15,7 +15,7 @@ const scratchy = localFont({
 });
 export default function Servicios() {
   return (
-    <main className={montse.className}>
+    <main className={montse.className} >
       <Header/>
       <div className={styles.title}>
         <p>

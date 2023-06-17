@@ -20,7 +20,7 @@ const montse = localFont({
 });
 export default function equipo() {
   return (
-    <main className={montse.className}>
+    <main className={montse.className} >
       <Header/>
       <div className={styles.title}>
       

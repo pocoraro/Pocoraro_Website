@@ -3,7 +3,6 @@ import logo from "../public/logo.svg";
 import menu from "../public/Menu.png";
 import Link from "next/link";
 import localFont from "next/font/local";
-
 import React, { useState, useEffect } from "react";
 const montse = localFont({
   src: [

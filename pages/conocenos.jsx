@@ -35,7 +35,7 @@ export default function Conocenos() {
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
   return (
-    <main className={montse.className}>
+    <main className={montse.className} >
       <Header />
       <Image
         className={styles.banner}

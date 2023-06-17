@@ -15,7 +15,7 @@ const scratchy = localFont({
 })
 export default function index() {
   return (
-    <main>
+    <main >
       <Header/>
       <div className={styles.contenedor_estrella}>
        <Image
