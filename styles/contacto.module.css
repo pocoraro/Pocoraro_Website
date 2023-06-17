@@ -9,6 +9,12 @@
     letter-spacing: 10px;
 
 }
+
+@media (max-width: 768px){
+    .title{
+        font-size: 1.8rem;
+    }
+}
 .stack{
     width: auto;
     position: relative;
@@ -68,6 +74,13 @@ justify-content: center;
     position: absolute;
     z-index: 5;
 }
+
+@media (max-width: 768px){
+    .img{
+        bottom: -2.8rem;
+    }
+}
+
 .contenido{
     display: flex;
     flex-direction: row;

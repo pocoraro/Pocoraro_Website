@@ -19,9 +19,11 @@ const scratchy = localFont({
 });
 export default function Contacto() {
   return (
-    <main className={montse.className}>
+    <main className={montse.className} style={{overflow: "hidden"}}>
       <Header />
-      <div className={`${styles.contenido} row`}>
+      <div
+        className={`${styles.contenido} row`}
+      >
         <div className={`${styles.title} col-md-8 col-sm-12`}>
           <p>
             <span className={styles.stack}>
@@ -53,36 +55,51 @@ export default function Contacto() {
           </p>
         </div>
         <form className={`${styles.formulario} col-md-4 col-sm-12`}>
-            <div className="row">
+          <div className="row">
             <div className="col-md-6">
-                <p>
-                    nombre
-                </p>
-            <input type="text" placeholder="nombre" className={`${styles.text_input} `} />
+              <p>nombre</p>
+              <input
+                type="text"
+                placeholder="nombre"
+                className={`${styles.text_input} `}
+              />
             </div>
             <div className="col-md-6">
-                <p>
-                    teléfono/celular
-                </p>
-            <input type="text" placeholder="telefono" className={`${styles.text_input} col-md-6`} />
+              <p>teléfono/celular</p>
+              <input
+                type="text"
+                placeholder="telefono"
+                className={`${styles.text_input} col-md-6`}
+              />
             </div>
-            </div>
-            
-            <div className={styles.title_input}>
-                <p>
-                    correo electrónico
-                </p>
-            <input type="text" placeholder="correo" className={`${styles.text_input} col-12`} />
-            </div>
-            <div className={styles.title_input}>
-                <p>
-                    mensaje
-                </p>
-            <textarea type="text"  className={`${styles.text_input} col-12`} />
-            </div>
-            <div className="col-12" style={{display:"flex",flexDirection:"row",justifyContent:"flex-end"}}>
-            <input type="submit" value="enviar" className={`${styles.submit} `}></input>
-            </div> </form>
+          </div>
+          <div className={styles.title_input}>
+            <p>correo electrónico</p>
+            <input
+              type="text"
+              placeholder="correo"
+              className={`${styles.text_input} col-12`}
+            />
+          </div>
+          <div className={styles.title_input}>
+            <p>mensaje</p>
+            <textarea type="text" className={`${styles.text_input} col-12`} />
+          </div>
+          <div
+            className="col-12"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "flex-end",
+            }}
+          >
+            <input
+              type="submit"
+              value="enviar"
+              className={`${styles.submit} `}
+            ></input>
+          </div>{" "}
+        </form>
       </div>
     </main>
   );
