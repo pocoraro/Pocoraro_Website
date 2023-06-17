@@ -1,7 +1,7 @@
 import Image from "next/image";
-import logo from "../public/logo.svg";
-import menu from "../public/menu.png";
-import exit from "../public/exit.png";
+import Logo from "../public/logo.svg";
+import Menu from "../public/Menu.png";
+import Exit from "../public/exit.png";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
             <Image
             onClick={closeHandler}
                className="exit"
-               src={exit.src}
+               src={Exit.src}
                width={50}
                height={50}
                alt="exit"
@@ -69,7 +69,7 @@ export default function Header() {
         <Link href='/' className="col-md-3 col-sm-6 col-6">
           <Image
             className="logo_nav"
-            src={logo.src}
+            src={Logo.src}
             width={300}
             height={100}
             alt="imagen logo"
@@ -77,7 +77,7 @@ export default function Header() {
         </Link>
         <div className={"sandwich col-sm-6 col-6"}>
           <div>
-            <Image onClick={menuHandler} className="snack cursor-pointer" src={menu.src} width={50} height={50} alt="imagen logo" />
+            <Image onClick={menuHandler} className="snack cursor-pointer" src={Menu.src} width={50} height={50} alt="imagen logo" />
           </div>
         </div>
         <div className={"navbar-cust col-md-9 col-sm-12 col-12"}>

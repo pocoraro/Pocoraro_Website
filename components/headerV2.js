@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "../public/logo.svg";
-import menu from "../public/menu.png";
+import menu from "../public/Menu.png";
 import Link from "next/link";
 import localFont from "next/font/local";
 
