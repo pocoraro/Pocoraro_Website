@@ -79,7 +79,7 @@ export default function Servicios() {
             <div className={styles.contenido_seccion}>
                 Se realizó una sesión de fotografía de productos, con el objetivo
                 de capturar
-                imágenes atractivas y de alta calidad de sus productos para su uso en materiales de parketing y publicidad.
+                imágenes atractivas y de alta calidad de sus productos para su uso en materiales de marketing y publicidad.
               </div>
           </div>
         </div>
@@ -90,13 +90,12 @@ export default function Servicios() {
               <img src="/rayon_servicios_servicios.svg" className={styles.span_img_underline}/>
 
               </span>
-              <h2>Fotografía</h2>
+              <h2>Branding</h2>
               
             </div>
             <div className={styles.contenido_seccion}>
-                Se realizó una sesión de fotografía de productos, con el objetivo
-                de capturar
-                imágenes atractivas y de alta calidad de sus productos para su uso en materiales de parketing y publicidad.
+                Se desarrolló el branding con el objetivo de crear una identidad visual sólida y coherente para la marca para representar
+                la esencia de la tienda y sus productos.
               </div>
           </div>
           <Image 
