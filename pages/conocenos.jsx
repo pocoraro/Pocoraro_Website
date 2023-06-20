@@ -28,7 +28,7 @@ export default function Conocenos() {
   //  banner = "/banners/web.svg";
   // }
   const [width, setWidth] = useState(0.0);
-  var [bannerRoute, setBanner] = useState(banner);
+  var [bannerRoute, setBanner] = useState("/banners/phone.svg");
 
   const handleResize = () => {
     console.log(width); 
