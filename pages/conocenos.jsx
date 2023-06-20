@@ -18,48 +18,32 @@ const montse = localFont({
 export default function Conocenos() {
   // var tamanoPantalla = window.innerWidth;
 
-   var banner = "";
-
-  
-  const [width, setWidth] = useState(0.0);
-  useEffect(() => {
-    const h = () => {
-      if (typeof window !== 'undefined') {
-        setWidth(window.innerWidth);
-      }
-    };
-
-    h();
-
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', handleResize);
-    }
-
-    return () => {
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('resize', handleResize);
-      }
-    };
-  }, []);
-  var [bannerRoute, setBanner] = useState("/banners/web.svg");
+  const [width, setWidth] = useState(0);
+  const [bannerRoute, setBanner] = useState('');
 
   const handleResize = () => {
-    console.log(width); 
     setWidth(window.innerWidth);
-    if (width < 601) {
-      setBanner("/banners/phone.svg");
-    } else if (width < 960) {
-      setBanner("/banners/tablet.svg");
-    } else {
-      setBanner("/banners/web.svg");
-    }
-    return setWidth(window.innerWidth);
   };
+
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  },[width]);
-    
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (width < 601) {
+      setBanner('/banners/phone.svg');
+    } else if (width < 960) {
+      setBanner('/banners/tablet.svg');
+    } else {
+      setBanner('/banners/web.svg');
+    }
+  }, [width]);
   return (
     <main className={montse.className} >
       <Header />
