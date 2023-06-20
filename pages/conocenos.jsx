@@ -18,17 +18,30 @@ const montse = localFont({
 export default function Conocenos() {
   // var tamanoPantalla = window.innerWidth;
 
-  // var banner = "";
+   var banner = "";
 
-  // if (tamanoPantalla < 600) {
-  //   banner="/banners/phone.svg";
-  // } else if (tamanoPantalla < 960) {
-  //   banner = "/banners/tablet.svg";
-  // } else {
-  //  banner = "/banners/web.svg";
-  // }
+  
   const [width, setWidth] = useState(0.0);
-  var [bannerRoute, setBanner] = useState("/banners/phone.svg");
+  useEffect(() => {
+    const h = () => {
+      if (typeof window !== 'undefined') {
+        setWidth(window.innerWidth);
+      }
+    };
+
+    h();
+
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleResize);
+      }
+    };
+  }, []);
+  var [bannerRoute, setBanner] = useState("/banners/web.svg");
 
   const handleResize = () => {
     console.log(width); 
@@ -45,7 +58,7 @@ export default function Conocenos() {
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [width]);
+  },[width]);
     
   return (
     <main className={montse.className} >
