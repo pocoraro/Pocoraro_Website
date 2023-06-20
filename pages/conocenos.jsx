@@ -16,22 +16,23 @@ const montse = localFont({
   variable: "--font-montse",
 });
 export default function Conocenos() {
-  var tamanoPantalla = window.innerWidth;
+  // var tamanoPantalla = window.innerWidth;
 
-  var banner = "";
+  // var banner = "";
 
-  if (tamanoPantalla < 600) {
-    banner="/banners/phone.svg";
-  } else if (tamanoPantalla < 960) {
-    banner = "/banners/tablet.svg";
-  } else {
-   banner = "/banners/web.svg";
-  }
+  // if (tamanoPantalla < 600) {
+  //   banner="/banners/phone.svg";
+  // } else if (tamanoPantalla < 960) {
+  //   banner = "/banners/tablet.svg";
+  // } else {
+  //  banner = "/banners/web.svg";
+  // }
   const [width, setWidth] = useState(0.0);
   var [bannerRoute, setBanner] = useState(banner);
 
   const handleResize = () => {
     console.log(width); 
+    setWidth(window.innerWidth);
     if (width < 601) {
       setBanner("/banners/phone.svg");
     } else if (width < 960) {
