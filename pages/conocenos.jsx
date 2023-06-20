@@ -17,7 +17,7 @@ const montse = localFont({
 });
 export default function Conocenos() {
   const [width, setWidth] = useState(0.0);
-  const [bannerRoute, setBanner] = useState("/banners/web.svg");
+  var [bannerRoute, setBanner] = useState("/banners/web.svg");
 
   const handleResize = () => {
     console.log(width); 
@@ -34,6 +34,13 @@ export default function Conocenos() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
+  if (width < 601) {
+    [bannerRoute, setBanner] =useState("/banners/phone.svg");
+    } else if (width < 960) {
+      [bannerRoute, setBanner] =useState("/banners/tablet.svg");
+    } else {
+      [bannerRoute, setBanner] =useState("/banners/web.svg");
+    }
   return (
     <main className={montse.className} >
       <Header />

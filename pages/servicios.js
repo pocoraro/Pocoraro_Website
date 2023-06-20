@@ -86,7 +86,7 @@ export default function Servicios() {
         <div className={styles.seccion_servicio}>
         <div className={`${styles.text_section} ${styles.text_section_left}`}>
             <div className={styles.title_section}>
-              <span className={styles.span_stack}>Chadddar Co.
+              <span className={styles.span_stack}>Moon River
               <img src="/rayon_servicios_servicios.svg" className={styles.span_img_underline}/>
 
               </span>
